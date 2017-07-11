@@ -47,6 +47,8 @@ static void serve_client( int fd ) {
     abort();
   } 
 
+  printf("%s",buffer);
+
   /* standard requests are of the form
    *   GET /foo/bar/qux.html HTTP/1.1
    * We want the second token (the file path).
